@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Addmission Form</title>
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+     table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+
+      
+    }
+    </style>
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Personal Detalis</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+         
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+
+          <div class="input-box">
+            <label for="cast-category">Cast Category:</label>
+		<select id="cast-category" name="cast-category" required>
+			<option value="General">General</option>
+			<option value="OBC">OBC</option>
+			<option value="SC">SC</option>
+			<option value="ST">ST</option>
+		</select><br><br>
+          </div>
+        </div>
+        <div class="input-box">
+            
+		<label for="father-name">Father's Name:</label>
+		<input type="text" id="father-name" name="father-name" required>
+
+		<label for="mother-name">Mother's Name:</label>
+		<input type="text" id="mother-name" name="mother-name" required><br><br>
+
+		<label for="date-of-birth">Date of Birth:</label>
+		<input type="date" id="date-of-birth" name="date-of-birth" required>
+
+		<label for="photo">Photo:</label>
+		<input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+        <label for="aadhar-number">Aadhar Card Number:</label>
+		<input type="text" id="aadhar-number" name="aadhar-number" required><br><br>
+
+        
+		<label for="father-contact">Father's Contact Number:</label>
+		<input type="tel" id="father-contact" name="father-contact" pattern="[0-9]{10}" required><br><br>
+
+		<label for="mother-contact">Mother's Contact Number:</label>
+		<input type="tel" id="mother-contact" name="mother-contact" pattern="[0-9]{10}" required><br><br>
+
+		<label for="country">Country:</label>
+		<input type="text" id="country" name="country" required>
+
+		<label for="nationality">Nationality:</label>
+		<input type="text" id="nationality" name="nationality" required><br><br>
+
+		<label for="address">Address:</label>
+		<textarea id="address" name="address" required></textarea>
+
+		<label for="pin-code">Pin Code:</label>
+        <input type="text" id="pin-code" name="pin-code" required><br><br>
+
+        </div>
+        <div class="input-box">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Other</span>
+            </label>
+          </div>
+        </div><br>
+        <div class="title">Qualification Details</div><br>
+        <table>
+          <tr>
+            <th>Level of Education</th>
+            <th>Field of Study</th>
+            <th>Year of Passing</th>
+            <th>Board/University</th>
+            <th>Total Percentage (%)</th>
+            <th>Upload  Document</th>
+          </tr>
+          <tr>
+            <td>
+            <h3>Secondary</h3>
+            </td>
+            <td><input type="text" id="field-of-study-1"></td>
+            <td><input type="text" id="year-of-passing-1"></td>
+            <td><input type="text" id="board-university-1"></td>
+            <td><input type="text" id="total-percentage-1"></td>
+            <td><input type="file" id="pdf-document-1"></td>
+          </tr>
+          <tr>
+            <td>
+            <h3>Sr Secondary</h3>
+            </td>
+            <td><input type="text" id="field-of-study-2"></td>
+            <td><input type="text" id="year-of-passing-2"></td>
+            <td><input type="text" id="board-university-2"></td>
+            <td><input type="text" id="total-percentage-2"></td>
+            <td><input type="file" id="pdf-document-2"></td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Graduation</h3>
+            </td>
+            <td><input type="text" id="field-of-study-3"></td>
+            <td><input type="text" id="year-of-passing-3"></td>
+            <td><input type="text" id="board-university-3"></td>
+            <td><input type="text" id="total-percentage-3"></td>
+            <td><input type="file" id="pdf-document-3"></td>
+            </tr>
+            <tr>
+            <td>
+              <h3>Post Graduation</h3>
+            </td>
+            <td><input type="text" id="field-of-study-4"></td>
+            <td><input type="text" id="year-of-passing-4"></td>
+            <td><input type="text" id="board-university-4"></td>
+            <td><input type="text" id="total-percentage-4"></td>
+            <td><input type="file" id="pdf-document-4"></td>
+            </tr>
+            <tr>
+            <td>
+              <h3>Other</h3>
+            </td>
+            <td><input type="text" id="field-of-study-5"></td>
+            <td><input type="text" id="year-of-passing-5"></td>
+            <td><input type="text" id="board-university-5"></td>
+            <td><input type="text" id="total-percentage-5"></td>
+            <td><input type="file" id="pdf-document-5"></td>
+            </tr>
+          
+          </table><br>
+          
+          <h1 class="title">Course Selection </h1><br>
+  <div class="input-box">
+  
+          <label for="course">Select a course:</label>
+          <select id="course" name="course">
+            <option value="">--Please choose an option--</option>
+            <option value="course1">Course 1</option>
+            <option value="course2">Course 2</option>
+            <option value="course3">Course 3</option>
+          </select>
+          
+       
+          
+          <label for="duration">Duration:</label>
+          <input type="text" id="duration" name="duration" readonly>
+          
+         
+          
+          <label for="fees">Fees:</label>
+          <input type="text" id="fees" name="fees" readonly>
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div> 
+  </div> 
+
+  <script>
+    const courseSelect = document.getElementById("course");
+const durationInput = document.getElementById("duration");
+const feesInput = document.getElementById("fees");
+
+courseSelect.addEventListener("change", function() {
+  switch (courseSelect.value) {
+    case "course1":
+      durationInput.value = "6 months";
+      feesInput.value = "$1000";
+      break;
+    case "course2":
+      durationInput.value = "12 months";
+      feesInput.value = "$2000";
+      break;
+    case "course3":
+      durationInput.value = "18 months";
+      feesInput.value = "$3000";
+      break;
+    default:
+      durationInput.value = "";
+      feesInput.value = "";
+  }
+});
+  </script>
+
+
+
+
+</body>
+</html>
